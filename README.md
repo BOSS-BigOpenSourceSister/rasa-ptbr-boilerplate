@@ -1,19 +1,42 @@
-# Rasa Boilerplate
+# Bot da BOSS
 <!-- badges -->
 <a href="https://www.gnu.org/licenses/gpl-3.0.pt-br.html"><img src="https://img.shields.io/badge/licence-GPL3-green.svg"/></a>
 <a href="https://codeclimate.com/github/lappis-unb/rasa-ptbr-boilerplate/maintainability"><img src="https://api.codeclimate.com/v1/badges/3fe22bf52000e147c6df/maintainability"/></a>
 ![badge_build](https://github.com/lappis-unb/rasa-ptbr-boilerplate/workflows/build_bot/badge.svg)
 
+### For English version, see [README-en](docs/README-en.md)
 
-## For English version, see [README-en](docs/README-en.md)
+## Entendendo a proposta
 
-## Tutorial para configurar todo o projeto
+Baseado na [Tais](http://github.com/lappis-unb/tais), o Bot da BOSS é um projeto feito em Rasa com configurações específicas para a construção de um chatbot.
+
+Para entender como funciona a arquitetura do bot, acesse a documentação sobre a [arquitetura do projeto](docs/arquitetura_bot.md).
 
 ### Pré requisitos
 
-Para rodar o projeto em sua máquina é necessário ter instalado:
-- Docker
-- Docker compose
+Para rodar o projeto em sua máquina, é necessário instalar o Docker e o Docker Compose. Cada sistema operacional e distribuição linux segue um padrão de instalação distinto. Para descobrir o seu, consulte a documentação abaixo:
+
+- [Docker](https://docs.docker.com/get-docker/).
+
+- [Docker Compose](https://docs.docker.com/compose/install/).
+
+⚠️ **Dica**: Para remover contêineres já construídos, você precisa identificar o ID daquele container que deseja derrubar. Para ver a lista de todos os contêineres em execução, use o comando:
+
+```sh
+sudo docker ps
+```
+
+Em seguida, use comando abaixo para parar o container desejado:
+
+```sh
+sudo docker container stop <ID do container>
+```
+
+Depois de pará-lo, remova o container usando o comando:
+
+```sh
+sudo docker container rm -f <ID do container>
+```
 
 ### Primeiros passos
 
@@ -23,80 +46,61 @@ Primeiramente, clone o repositório para sua máquina local usando o comando:
 git clone <Link para o repositório>
 ```
 
-Para ter seu chatbot Rasa funcionando, certifique-se de estar dentro da pasta do projeto e então execute no terminal o seguinte comando:
+Para ter seu chatbot funcionando, certifique-se de estar dentro da pasta do projeto e então execute no terminal o seguinte comando:
 
 ```sh
-make first-run
+sudo make first-run
 ```
 
-⚠️ **Atenção**: Caso ocorra algum erro de permissão, executar o comando `sudo make first-run`.
+⚠️ **Dica**: Se você já tiver permissão de sudo por padrão, pode executar os comandos diretamente, como `make first-run`.
 
 
-Esse comando irá construir a infraestrutura necessária (subir containers com as dependências, treinar o chatbot, etc) para possibilitar a interação com o chatbot.
+Esse comando irá construir a infraestrutura necessária (subir contêineres com as dependências, treinar o chatbot, etc) para possibilitar a interação com o chatbot.
 
 Tudo está dockerizado então você não deve ter problemas de instalação do ambiente.
 
-Depois que tudo for instalado, você verá a seguinte mensagem e pode começar a interagir com o bot
+Depois que tudo for instalado, você verá a seguinte mensagem:
 
 ```sh
 Bot loaded. Type a message and press enter (use '/stop' to exit):
 Your input ->
 ```
 
-Para fechar a interação com o bot é só dar `ctrl+c`.
+Agora você pode começar a interagir com o bot!
 
+Para fechar a interação com o bot é só dar `ctrl+c`.
 
 Para conferir se os contêineres foram construídos corretamente, execute o comando:
 
 ```sh
-docker ps
+sudo docker ps
 ```
+
 Se tudo der certo, você conseguirá ver uma tabela com dois contêineres de nomes `rasa-ptbr-boilerplate_bot-webchat` e 
 `rasa-ptbr-boilerplate_actions` na coluna IMAGE.
 
-Para iniciar uma conversa com o chatbot, execute o comando `make run-shell`, espere o comando rodar e divirta-se!
+Para iniciar uma conversa com o chatbot, execute o comando:
 
+```sh
+sudo make run-shell
+```
 
-## Introdução
-
-Um projeto feito em Rasa com configurações necessárias para a construção de um projeto grande de chatbot.
-
-Este projeto teve como base o projeto [Tais](http://github.com/lappis-unb/tais).
-
-### Entenda a Arquitetura
-
-É utilizado no boilerplate diversas tecnologias que interagem entre si para obter um melhor resultado. Veja a arquitetura implementada:
-
-![](https://user-images.githubusercontent.com/8556291/57933140-d8d66b80-7892-11e9-8d58-a7eda60b099b.png)
-
-O usuário interage com a Boilerplate via Telegram, que manda as mensagens para o Rasa NLU através de
-conectores, onde ele identifica a *intent*, e responde pelo Rasa Core, de acordo com as *stories* e *actions*.  
-As *models* utilizadas para a conversação foram geradas pelo módulo *trainer* e depois transferidas para o bot, estes
-modelos podem ser versionados e evoluídos entre bots.  
-Os notebooks avaliam o funcionamento de acordo com o formato das *intents* e *stories*.
-O elasticsearch coleta os dados da conversa e armazena para a análise feita pelo kibana, que gera gráficos para
-avaliação das conversas dos usuários e do boilerplate.
-
-### Bot
-
-Este script foi configurado para construir as imagens genéricas necessárias para execução deste ambiente.
-Caso seu projeto utilize este boilerplate e vá realizar uma integração contínua ou similar, é interessante
-criar um repositório para as imagens e substitua os nomes das imagens "lappis/bot", e "lappis/botrequirements" pelas suas respectivas novas imagens, por exemplo "<organização>/bot" em repositório público.
-
+Espere o comando rodar e divirta-se!
 
 ### Treinamento
 
-**Atenção**: o comando de treinamento é usado para criar os modelos necessários na conversação do bot. Para treinar o seu chatbot execute o comando:
+**Atenção**: O comando de treinamento é usado para criar os modelos necessários na conversação do bot. Para treinar o seu chatbot execute o comando:
 
 ```sh
-make train
+sudo make train
 ```
 
 ### Executando o bot no terminal
+
 Para executar o bot no terminal execute:
 
 ```sh
-make run-shell
+sudo make run-shell
 ```
 
 ### Executando o bot no Telegram
