@@ -43,6 +43,8 @@ intents:
 - informar_nome
 - casa_hogwarts
 - fatos_sobre_gatos
+- animal
+- planeta
 entities:
 - religiao
 - time
@@ -266,6 +268,12 @@ responses:
     - text: Aqui vai um fato sobre gato...
     - text: Uma coisa legal sobre gatos...
     - text: Um fato sobre gatinhos...
+  utter_animal:
+    - text: Eu adoro todos os animais! Mas gosto muito de tubarões. Você sabia que os tubarões surgiram há mais de 450 milhões de anos?
+    - text: Eu AMO tubarões! Sabia que existem mais de 500 espécies de tubarão?
+  utter_planeta:
+    - text: "Em ordem de proximidade ao Sol, os planetas são: Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano e Netuno. Ou seja, existem 8 planetas no Sistema Solar."
+    - text: Hoje são 8 planetas, mas já existiram 9, sabia? É que Plutão deixa de ser planeta e ganha a nova classificação de planeta-anão.
 
 actions:
 - action_teste

@@ -378,3 +378,27 @@
 * fatos_sobre_gatos
     - utter_fato_sobre_gatos
     - action_cat_facts
+
+## falar_de_animal
+* animal
+    - utter_animal
+    - utter_continuar_conversa
+
+## falar_de_animal_2
+* cumprimentar
+    - utter_cumprimentar
+* animal
+    - utter_animal
+    - utter_continuar_conversa
+
+## falar_de_planeta
+* planeta
+    - utter_planeta
+    - utter_continuar_conversa
+
+## falar_de_planeta_2
+* cumprimentar
+    - utter_cumprimentar
+* planeta
+    - utter_planeta
+    - utter_continuar_conversa

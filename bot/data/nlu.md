@@ -63,11 +63,11 @@
 - [mestre yoda](starwars)
 - citação de [starwars](starwars)
 - cite [yoda](starwars)
-- me manda um concelho [jedi](starwars)
+- me manda um conselho [jedi](starwars)
 - sabedoria [jedi](starwars)
-- concelhos [jedi](starwars)
+- conselhos [jedi](starwars)
 - [star wars](starwars)
-- concelhos do [yoda](starwars)
+- conselhos do [yoda](starwars)
 - [guerra nas estrelas](starwars)
 - quero conselhos do yoda
 - lado negro da força
@@ -552,3 +552,25 @@
 - Quero saber algo dos [gatos](gato)
 - O que voce sabe sobre [gatinho](gato?)
 - o que vc sabe sobre [gatos](gato)?
+
+## intent:animal
+- qual seu animal favorito
+- qual seu animal predileto
+- de que animais você gosta
+- de que animais voce gosta
+- você tem medo de algum animal
+- voce tem medo de algum animal
+- você pode falar sobre algum animal
+- voce pode falar sobre algum animal
+- conversar sobre animais
+- falar sobre animais
+- você pode contar alguma curiosidade sobre um animal
+- voce pode contar alguma curiosidade sobre um animal
+
+## intent:planeta
+- quantos planetas existem no sistema solar
+- quais são os planetas do sistema solar
+- quais sao os planetas do sistema solar
+- falar sobre planetas
+- falar sobre sistema solar
+- me conte um fato sobre o sistema solar
