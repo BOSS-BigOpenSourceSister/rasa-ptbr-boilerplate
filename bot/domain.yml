@@ -43,6 +43,7 @@ intents:
 - informar_nome
 - casa_hogwarts
 - fatos_sobre_gatos
+- animal
 entities:
 - religiao
 - time
@@ -266,6 +267,9 @@ responses:
     - text: Aqui vai um fato sobre gato...
     - text: Uma coisa legal sobre gatos...
     - text: Um fato sobre gatinhos...
+  utter_animal:
+    - text: Eu adoro todos os animais! Mas gosto muito de tubarões. Você sabia que os tubarões surgiram há mais de 450 milhões de anos?
+    - text: Eu AMO tubarões! Sabia que existem mais de 500 espécies de tubarão?
 
 actions:
 - action_teste
