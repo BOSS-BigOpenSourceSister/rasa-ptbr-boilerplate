@@ -566,3 +566,11 @@
 - falar sobre animais
 - você pode contar alguma curiosidade sobre um animal
 - voce pode contar alguma curiosidade sobre um animal
+
+## intent:planeta
+- quantos planetas existem no sistema solar
+- quais são os planetas do sistema solar
+- quais sao os planetas do sistema solar
+- falar sobre planetas
+- falar sobre sistema solar
+- me conte um fato sobre o sistema solar

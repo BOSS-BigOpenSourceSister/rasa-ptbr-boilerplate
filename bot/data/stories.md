@@ -390,3 +390,15 @@
 * animal
     - utter_animal
     - utter_continuar_conversa
+
+## falar_de_planeta
+* planeta
+    - utter_planeta
+    - utter_continuar_conversa
+
+## falar_de_planeta_2
+* cumprimentar
+    - utter_cumprimentar
+* planeta
+    - utter_planeta
+    - utter_continuar_conversa
