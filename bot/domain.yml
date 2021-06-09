@@ -29,10 +29,20 @@ intents:
 - historia
 - testa_acoes
 - objetivo
+- daria
+- avatar
+- harry_potter
+- friends
+- o_que_e_boss
 - informa_telefone
 - cancelar
 - request_login
 - limpar_slots
+- pedir_conselho
+- anime
+- informar_nome
+- casa_hogwarts
+- fatos_sobre_gatos
 entities:
 - religiao
 - time
@@ -52,7 +62,9 @@ entities:
 - historia
 - telefone
 - cpf
-- dada_nascimento
+- data_nascimento
+- nome
+- gato
 slots:
   telefone:
     type: unfeaturized
@@ -60,6 +72,10 @@ slots:
     type: unfeaturized
   data_nascimento:
     type: unfeaturized
+  nome:
+    type: text
+  fatos_sobre_gatos:
+    type: list
 responses:
   utter_fallback:
   - text: "Desculpe, ainda não sei falar sobre isso ou talvez não consegui entender\
@@ -174,6 +190,52 @@ responses:
   - text: "Eu sou um chatbot Básico. Sei falar de coisas pontuais, mas eu posso ajudar\
       \ em muito em exemplos! no meu repositório tem muita coisa legal que vc pode\
       \ aprender! Acessa lá: https://github.com/lappis-unb/rasa-ptbr-boilerplate\n\
+      \n Ah e eu sou Open Source!!!"
+  utter_daria:
+  - text: "Acho que nunca ouvi falar... 
+        \nAh! Aquela garota com cara de nerd! Ela é legal."
+  - text: "Daria é uma série de animação americana criada para a MTV em 1997. 
+        \nNão passa mais na TV, mas a internet existe para resolver esse problema!" 
+  - text: "Daria é uma adolescente feminista que não se encaixa entre os jovens de sua escola. 
+        \nMas ela tem uma melhor amiga e parceira de hmm... infortúnios, Jane."
+  - text: "Daria Morgendorffer é a filha mais velha de um casal sem noção.
+        \nComo se não fosse o suficiente, sua irmã, Quin, é a garota popular do colégio."
+  - text: "Daria é uma série americana de sucesso!
+        \nNa verdade não, mas isso não é importante, certo?"
+  utter_anime:
+  - text: "Anime??? Eu adoro. Meu preferido é One Piece"
+  utter_recomenda_anime:
+  - text: "Se você está em busca de recomendação assista Nana, é um drama maravilhoso!"
+  - text: "Uma amiga minha pode te ajudar, o nome dela é @AniCatBot. Ela tá sempre pelo telegram."
+  utter_avatar:
+  - text: "Água... Terra... Fogo... Ar... Espera um momento, estamos falando do mesmo Avatar?
+    \nMelhor ficar quieta senão vou acabar soltando spoiler.... "
+  - text: "Há muito tempo as nações viviam em paz e harmonia, e ai tudo mudou quando a nação do fogo atacou.
+    \nAté meus bits se arrepiaram com essa lembrança, você também?\n"
+  - text: "Amo Avatar! Eu sou dobradora de metal, mas você já devia saber, né, afinal tenho um exercíto de componentes que me fazem existir.\n"
+  - text: "Eu vi Avatar na TV Globinho, quando ainda era só uma ideia na cabeça de alguém....
+    \nEu queria ser o Avatar ou uma dominadora de água, ia poder manter toda água longe de mim
+    \nE assim nunca mais ia correr o risco de programadores desatentos jogando café em cima de mim :P\n"
+  utter_harry_potter:
+    - text: "Eu sou fã de Harry Potter, já li todos os livros, e também vi os filmes.\
+      \n\nSe eu estudasse em Hogwarts seria da Corvinal."
+    - text: "Adoro Harry Potter! Eu sou da Corvinal, sabia?\
+      \n\nO meu favorito é o Prisioneiro de Azkaban! Quem concorda respira :P"
+    - text: "Eu adoro maratonar os filmes de Harry Potter!\
+      \n\nVocê sabia que são 8 filmes? Isso fora os livros... que são 7!"
+  utter_friends:
+  - text: "Friends é uma série muito divertida sobre os amigos Monica, Rachel, Phoebe, Joey, Chandler e Ross!\n"
+  - text: "Friends é uma sitcom que se passa em Nova York\n
+            I'll be there for you... :)\n"
+  - text: "A série Friends conta várias histórias de um grupo de amigos que gosta de tomar café\
+            \ juntos no Central Perk ;)\n"
+  utter_temporadas_friends:
+  - text: "A minha temporada favorita é a sétima, eu adoro um casamento ;) <3"
+  utter_boss_apresenta:
+  - text: "A BOSS é uma iniciativa legal"
+  - text: "A BOSS apresenta software livre para mulheres maravilhosas"
+  utter_talk_like_a_boss:
+  - text: "A Talk like a boss é uma série de entrevistas com mulheres incríveis\
       \n Ah e eu sou Open Source ;)"
   utter_pergunta_cancelar:
     - text: Entendi. Você deseja cancelar?
@@ -193,8 +255,24 @@ responses:
     - text: Ótimo, seus dados estão armazenado nos meus slots. Terminei o formulário ;)
   utter_forms_cancelado:
     - text: Ok, forms cancelado. Podemos voltar a conversar sobre outros assuntos ;)
+  utter_informar_nome: 
+    - text: "Legal {nome}!"
+  utter_chapeu_seletor:
+    - text: É difícil.. Muito difícil. Pensando bem, acho que...
+    - text: Em qual casa te colocar...? É melhor que seja...
+    - text: Estou vendo que não vai ser fácil. Bom, se tem certeza...
+    - text: Sonserina? Grifinória? Acho que...
+  utter_fato_sobre_gatos:
+    - text: Aqui vai um fato sobre gato...
+    - text: Uma coisa legal sobre gatos...
+    - text: Um fato sobre gatinhos...
+
 actions:
 - action_teste
 - action_telefone
+- action_pedir_conselho
+- action_sorting_hat
+- action_cat_facts
+
 forms:
   - login_form
