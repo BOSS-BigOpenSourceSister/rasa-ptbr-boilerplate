@@ -43,6 +43,7 @@ intents:
 - informar_nome
 - casa_hogwarts
 - fatos_sobre_gatos
+- informar_esporte
 entities:
 - religiao
 - time
@@ -266,7 +267,10 @@ responses:
     - text: Aqui vai um fato sobre gato...
     - text: Uma coisa legal sobre gatos...
     - text: Um fato sobre gatinhos...
-
+  utter_informar_esporte:
+    - text: Eu não jogo nenhum esporte...ultimamente estou muito sendetária.
+    - text: Eu não pratico nenhum esporte, mas se fosse para esolher acho que faria saltos ornamentais. Acho um máximo!
+    - text: Eu não pratico nenhuma atividade física mas eu recomendo você praticar, faz muito bem para a saúde!
 actions:
 - action_teste
 - action_telefone

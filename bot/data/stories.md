@@ -378,3 +378,8 @@
 * fatos_sobre_gatos
     - utter_fato_sobre_gatos
     - action_cat_facts
+
+## informar_esporte
+* informar_esporte
+    - utter_informar_esporte
+    - utter_continuar_conversa 
