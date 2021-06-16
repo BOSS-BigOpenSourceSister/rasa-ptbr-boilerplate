@@ -552,3 +552,16 @@
 - Quero saber algo dos [gatos](gato)
 - O que voce sabe sobre [gatinho](gato?)
 - o que vc sabe sobre [gatos](gato)?
+
+## intent:informar_esporte
+- Qual é seu esporte favorito?
+- Voce gosta de esporte?
+- vc gosta de jorgar?
+- voce pratica algum esporte?
+- vc pratica esporte?
+- vc gosta de esporte?
+- Qual esporte voce mais mais gosta?
+- qual esporte voce joga?
+- joga algum esporte?
+- Faz alguma atividade fisica?
+- Voce pratica alguma atividade fisica?
