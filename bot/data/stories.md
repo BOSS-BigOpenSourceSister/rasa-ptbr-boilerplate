@@ -377,4 +377,13 @@
 ## fato_sobre_gato
 * fatos_sobre_gatos
     - utter_fato_sobre_gatos
-    - action_cat_facts
+    - action_cat_fact
+
+
+## fala_cantada
+* tudo_cumprimentar
+- utter_cumprimentar
+* cantada
+- utter_cantada
+
+

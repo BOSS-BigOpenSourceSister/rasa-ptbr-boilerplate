@@ -551,4 +551,17 @@
 - Um fato de [gatinhos](gato)
 - Quero saber algo dos [gatos](gato)
 - O que voce sabe sobre [gatinho](gato?)
-- o que vc sabe sobre [gatos](gato)?
+- o que vc sabe sobre [gatos](gato)
+
+## intent:cantada
+- cantada
+- fale uma cantada
+- fala uma cantada
+- me fala uma cantada
+- me dê uma cantada
+- qual cantada?
+- quero saber uma cantada
+- você sabe alguma cantada?
+- cantada?
+
+

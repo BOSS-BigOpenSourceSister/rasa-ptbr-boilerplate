@@ -36,13 +36,14 @@ intents:
 - o_que_e_boss
 - informa_telefone
 - cancelar
-- request_login
+ request_login
 - limpar_slots
 - pedir_conselho
 - anime
 - informar_nome
 - casa_hogwarts
 - fatos_sobre_gatos
+- cantada
 entities:
 - religiao
 - time
@@ -266,6 +267,13 @@ responses:
     - text: Aqui vai um fato sobre gato...
     - text: Uma coisa legal sobre gatos...
     - text: Um fato sobre gatinhos...
+  utter_cantada:
+- text: "Qual rampa que eu pego para ter acesso a você?"
+- text: "Você é eletricista? Porque você iluminou meu coração"
+- text: "Que perfume é esse que você passa e fica com cheiro de amor da minha vida?"
+- text: "Posso te chamar de calçada esburacada? Porque você me deixa caidinhE no chão"
+- text: "Você acredita em amor a primeira vista ou devo passar aqui mais uma vez?"
+
 
 actions:
 - action_teste
@@ -273,6 +281,7 @@ actions:
 - action_pedir_conselho
 - action_sorting_hat
 - action_cat_facts
+- action_cantada
 
 forms:
   - login_form
