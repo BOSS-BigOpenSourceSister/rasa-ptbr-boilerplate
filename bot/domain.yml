@@ -281,6 +281,7 @@ actions:
 - action_pedir_conselho
 - action_sorting_hat
 - action_cat_facts
+- action_cantada
 
 forms:
   - login_form
