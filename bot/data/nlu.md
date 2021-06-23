@@ -556,9 +556,12 @@
 ## intent:cantada
 - cantada
 - fale uma cantada
-- dê uma cantada
+- fala uma cantada
 - me fala uma cantada
 - me dê uma cantada
 - qual cantada?
 - quero saber uma cantada
+- você sabe alguma cantada?
+- cantada?
+
 

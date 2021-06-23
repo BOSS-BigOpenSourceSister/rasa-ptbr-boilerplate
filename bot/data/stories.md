@@ -379,14 +379,11 @@
     - utter_fato_sobre_gatos
     - action_cat_fact
 
-## cantada1
-* cantada
-	- utter_cantada
 
-## fala_cantada_com_conversa
-* tudo_bem
-	- utter_tudo_bem
+## fala_cantada
+* tudo_cumprimentar
+- utter_cumprimentar
 * cantada
-	- utter_cantada
+- utter_cantada
 
 
