@@ -116,4 +116,13 @@ class ActionCatFacts(Action):
                 dispatcher.utter_message(ValueError)
             return []
 
+class ActionDivasPop(Action):
+    def name(self) -> Text:
+        return "action_divas_pop"
+    
+    def run(self, dispatcher, tracker, domain):
+        try:
+            dispatcher.utter_message("Oi, testando as divas pop...")
+        except ValueError:
+            dispatcher.utter_message(ValueError)
         

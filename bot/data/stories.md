@@ -378,3 +378,8 @@
 * fatos_sobre_gatos
     - utter_fato_sobre_gatos
     - action_cat_facts
+
+## fatos_divas_pop
+* divas_pop
+    - utter_divas_pop
+    - action_divas_pop

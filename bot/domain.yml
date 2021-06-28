@@ -43,6 +43,7 @@ intents:
 - informar_nome
 - casa_hogwarts
 - fatos_sobre_gatos
+- divas_pop
 entities:
 - religiao
 - time
@@ -266,6 +267,13 @@ responses:
     - text: Aqui vai um fato sobre gato...
     - text: Uma coisa legal sobre gatos...
     - text: Um fato sobre gatinhos...
+  utter_divas_pop:
+    - text: A melhor diva pop eh a Madonna
+    - text: Sabia que a Beyonce juntamente com o Jay-Z derrubaram o aviao da Ashanti
+    - text: A Sia esta no cativeiro da Beyonce
+    - text: A M.I.A infelizmente eh antivax
+    - text: o videoclipe de Bikini Porn da Tove Lo, foi inspirado na Andressa Urach
+    - text: Bebe Rexha eh conhecida no Brasil pelo cover de So da tu
 
 actions:
 - action_teste
@@ -273,6 +281,7 @@ actions:
 - action_pedir_conselho
 - action_sorting_hat
 - action_cat_facts
+- action_divas_pop
 
 forms:
   - login_form
