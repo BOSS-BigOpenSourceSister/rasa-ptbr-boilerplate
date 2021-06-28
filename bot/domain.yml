@@ -43,6 +43,7 @@ intents:
 - informar_nome
 - casa_hogwarts
 - fatos_sobre_gatos
+- academia
 entities:
 - religiao
 - time
@@ -266,6 +267,11 @@ responses:
     - text: Aqui vai um fato sobre gato...
     - text: Uma coisa legal sobre gatos...
     - text: Um fato sobre gatinhos...
+  utter_academia:
+    - text: Vou para a academia todos os dias, por isso estou sempre em forma.
+    - text: O que você acha de ir para a academia amanhã então?
+    - text: Uaaau! Que animação! Não tenho todo esse pique...
+    - text: Poxa!!! Vamos treinar juntos?
 
 actions:
 - action_teste
