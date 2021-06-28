@@ -378,3 +378,17 @@
 * fatos_sobre_gatos
     - utter_fato_sobre_gatos
     - action_cat_facts
+
+## falar_sobre_academia
+* academia
+    - utter_academia
+
+## falar_sobre_academia_com_conversinha
+* cumprimentar
+    - utter_cumprimentar
+* tudo_bem
+    - utter_tudo_bem
+* academia
+    - utter_academia
+* despedir
+    - utter_despedir

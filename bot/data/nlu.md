@@ -552,3 +552,17 @@
 - Quero saber algo dos [gatos](gato)
 - O que voce sabe sobre [gatinho](gato?)
 - o que vc sabe sobre [gatos](gato)?
+
+## intent:academia
+- Você vai para a academia
+- Você é fitness
+- Academia é do lado da minha casa
+- Quero voltar pra academia
+- Malhei perna
+- Treinei muito hoje
+- O treino foi pesado
+- Aumentei o peso na academia
+- Nunca mais fui pra academia
+- Odeio ir pra academia
+- Fiz o treino em casa
+- Fiquei uma hora na academia
