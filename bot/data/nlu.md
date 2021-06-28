@@ -552,3 +552,14 @@
 - Quero saber algo dos [gatos](gato)
 - O que voce sabe sobre [gatinho](gato?)
 - o que vc sabe sobre [gatos](gato)?
+
+## intent:divas_pop
+- Me fale sobre divas pop
+- Quero saber sobre divas pop
+- O que voce sabe sobre divas pop
+- Vc quer conversar sobre divas pop
+- voce quer conversar sobre divas pop
+- Me fale sobre novidades do mundo pop
+- Quero saber tudo sobre divas pop
+- novidades divas pop
+- novidades do mundo pop
