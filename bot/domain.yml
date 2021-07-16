@@ -43,6 +43,7 @@ intents:
 - informar_nome
 - casa_hogwarts
 - fatos_sobre_gatos
+- curiosidades_sobre_planetas
 entities:
 - religiao
 - time
@@ -266,6 +267,21 @@ responses:
     - text: Aqui vai um fato sobre gato...
     - text: Uma coisa legal sobre gatos...
     - text: Um fato sobre gatinhos...
+  utter_curiosidades_sobre_planetas:
+    - text: Os Planetas são corpos celestes sem luz e calor próprios, sólidos, arredondados e com gravidade própria, os quais giram em torno de uma estrela maior (órbita livre), que no caso do planeta Terra é o Sol.
+    - text: Os oito planetas do Sistema Solar, em ordem de proximidade ao sol, são Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano e Netuno.
+    - text: Plutão é um planeta anão que orbita o nosso sistema solar. 
+    - text: Planetas anões são aqueles cujas massas são muito pequenas, de forma que eles não são os astros dominantes em suas órbitas e possuem luas que têm massa de valor muito próximo.
+    - text: Existem 5 planetas anões 
+    - text: Os planetas anões são Ceres, Plutão, Haumea, Makemake e Éris, com a possibilidade de inclusão do objeto celeste Sedna e dezenas de outros nessa categoria nos próximos anos.
+    - text: Temos cinco planetas considerados anões
+    - text: Vênus não apresenta lua e se movimenta de forma retrograda
+    - text: Urano é o planeta mais frio
+    - text: O sistema solar não acaba em Plutão
+    - text: Nós vivemos “dentro” do Sol. A atmosfera externa do sol se estende muito além de sua superfície visível e nosso planeta orbita nessa atmosfera tênue, que se estende por pelo menos 16 bilhões de quilômetros.
+    - text: O sistema solar possui mais de 200 luas
+    - text: Existem rochas de Marte na Terra
+    - text: O planeta mais quente não é o mais próximo do Sol. Apesar de muitos pensarem que é Mercúrio, na verdade é Vênus. A explicação é por ele possuir uma atmosfera muito mais densa.
 
 actions:
 - action_teste
