@@ -378,3 +378,8 @@
 * fatos_sobre_gatos
     - utter_fato_sobre_gatos
     - action_cat_facts
+
+## curiosidade_sobre_planeta
+* curiosidades_sobre_planetas
+    -utter_curiosidades_sobre_planetas
+   

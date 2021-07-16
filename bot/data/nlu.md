@@ -552,3 +552,13 @@
 - Quero saber algo dos [gatos](gato)
 - O que voce sabe sobre [gatinho](gato?)
 - o que vc sabe sobre [gatos](gato)?
+
+## intent:curiosidades_sobre_planetas
+- me fale sobre planetas
+- me conte uma curiosidade sobre planetas
+- quantos planetas existem? 
+- porque plutão foi tirado dos planetas?
+- o que são planetas anão?
+- quantos planetas anões existem? 
+- quais são esses planetas anões? 
+
