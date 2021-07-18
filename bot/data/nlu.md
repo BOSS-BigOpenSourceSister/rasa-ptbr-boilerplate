@@ -552,3 +552,8 @@
 - Quero saber algo dos [gatos](gato)
 - O que voce sabe sobre [gatinho](gato?)
 - o que vc sabe sobre [gatos](gato)?
+## intent:sorvete
+- você gosta de sorvete?
+- vc gosta de sorvete?
+- qual o seu sabor de sorvete preferido?
+- me fala qual sorvete vc mais gosta

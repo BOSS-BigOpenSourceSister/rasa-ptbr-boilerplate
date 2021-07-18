@@ -43,6 +43,8 @@ intents:
 - informar_nome
 - casa_hogwarts
 - fatos_sobre_gatos
+- sorvete
+
 entities:
 - religiao
 - time
@@ -266,6 +268,11 @@ responses:
     - text: Aqui vai um fato sobre gato...
     - text: Uma coisa legal sobre gatos...
     - text: Um fato sobre gatinhos...
+  utter_sorvete:
+    - text: Sorvete? Eu adoro sorvete, meu sabor preferido é o de menta com chocolate. Recomendo!
+    - text: Eu adoro sorvete! Menta com chocolate é muito bom!
+    - text: Eu amo sorvete! Sorvete de menta com chocolate é uma delícia!
+    - text: Quando o assunto é sorvete eu gosto de todos os sabores mas meu preferido é menta com chocolate!
 
 actions:
 - action_teste
