@@ -8,7 +8,7 @@ Converse com o [@BotFather do Telegram](https://t.me/BotFather) e crie um bot de
 
 
 ##### Exporte as variáveis do seu bot
-Após escolher um nome para seu bot, o @BotFather lhe dará um token para utilizar para acessar a API do Telegram. Adicione ambos no [arquivo de configurações do bot](../docker/bot-telegram.env), como a seguir. Substitua o TELEGRAM_TOKEN pelo token lhe enviado pelo @BotFather e TELEGRAM_BOT_USERNAME pelo nome do seu bot.
+Após escolher um nome para seu bot, o @BotFather lhe dará um token para utilizar para acessar a API do Telegram. Adicione ambos no [arquivo de configurações do bot](../env/bot-telegram.env), como a seguir. Substitua o TELEGRAM_TOKEN pelo token lhe enviado pelo @BotFather e TELEGRAM_BOT_USERNAME pelo nome do seu bot.
 
 ```sh
 TELEGRAM_BOT_USERNAME=token_fornecido_pelo_BotFather
@@ -31,7 +31,7 @@ a porta utilizada pelo no Makefile.
 
 ##### Exporte a URL do Webhook 
 
-Enquanto o ngrok estiver em execução, ele apresentará uma série de informações da sessão atual. Copie a url do campo Forwarding com o protocolo HTTPS e cole no [arquivo de configurações do bot](../docker/bot-telegram.env). ela será similar à seguinte.
+Enquanto o ngrok estiver em execução, ele apresentará uma série de informações da sessão atual. Copie a url do campo Forwarding com o protocolo HTTPS e cole no [arquivo de configurações do bot](../env/bot-telegram.env). ela será similar à seguinte.
 
 ```sh
 TELEGRAM_WEBHOOK=link_do_ngrok/webhooks/telegram/webhook
@@ -42,7 +42,7 @@ TELEGRAM_WEBHOOK=link_do_ngrok/webhooks/telegram/webhook
 
 ##### Execução do bot no telegram
 
-Ao final de realizar essas configurações, seu [arquivo de configurações do bot](../docker/bot-telegram.env) deve estar de acordo com o exibido logo abaixo:
+Ao final de realizar essas configurações, seu [arquivo de configurações do bot](../env/bot-telegram.env) deve estar de acordo com o exibido logo abaixo:
 
 ```sh
 TELEGRAM_BOT_USERNAME=lappisbot
